@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -11,8 +12,10 @@ import { AppService } from './app.service';
       type:'postgres',
       url: process.env.DATABASE_URL,
       autoLoadEntities:true,
-      synchronize:true,
+      synchronize:false,
+      logging:true,
     }),
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
