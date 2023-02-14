@@ -14,10 +14,10 @@ model User{
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  email    String  @unique
-  hash     String
-  hashedRt String?
-
+  email     String   @unique
+  hash      String
+  hashedRt  String?
 
   @@map("users")
 }
+
