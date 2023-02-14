@@ -1,4 +1,15 @@
 {
+  "printWidth": 80,
+  "tabWidth": 2,
+  "trailingComma": "all",
   "singleQuote": true,
-  "trailingComma": "all"
+  "semi": true,
+  "importOrder": ["^@app/(.*)$", "^@core/(.*)$", "^@service/(.*)$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderParserPlugins": [
+    "typescript",
+    "classProperties",
+    "decorators-legacy"
+  ]
 }
