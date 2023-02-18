@@ -1,0 +1,8 @@
+jest.config.ts
+*.spec.ts
+node_modules
+dist
+lint-staged.config.cjs
+src/core/generated/entities/index.ts
+src/shared/migration/services/migration.service.ts
+src/shared/migration/controllers/migration.controller.ts
